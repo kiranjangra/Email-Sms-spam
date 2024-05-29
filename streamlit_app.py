@@ -63,7 +63,8 @@ st.markdown(custom_css, unsafe_allow_html=True)
 
 
 st.title("Email/Sms Classifier")
-st.image("E:\Spam Project\images.jpg",width=100)
+
+st.image("https://github.com/kiranjangra/Email-Sms-spam/blob/main/images.jpg",width=100)
 
 with st.expander("1. Check if your text is spam or not"):
     input_sms = st.text_area("Enter the message")
