@@ -34,7 +34,7 @@ def transform_word(text):
             word_list.append(word)
     
     for i in text:
-        if i not in stopwords.words(word_list) and i not in string.punctuation:
+        if i not in stopwords.words(nltk.download('punkt')) and i not in string.punctuation:
             y.append(i)
 
     text = y[:]
