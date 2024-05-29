@@ -1,5 +1,3 @@
 nltk==3.8.1
 scikit-learn==1.4.2
-streamlit
-pickle
-string
+streamlit==1.34.0
