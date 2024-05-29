@@ -21,8 +21,20 @@ def transform_word(text):
     text = y[:]  # if this code doen't work at any other source then try test=y[:]
     y.clear()
 
+    with open('your_file.txt', 'r') as file:
+    # Read the contents of the file
+        content = file.read()
+    
+    # Split the contents into words
+        words = content.split()
+    
+    # Append each word to a list
+        word_list = []
+        for word in words:
+            word_list.append(word)
+    
     for i in text:
-        if i not in stopwords.words('english') and i not in string.punctuation:
+        if i not in stopwords.words(word_list) and i not in string.punctuation:
             y.append(i)
 
     text = y[:]
